@@ -1,0 +1,74 @@
+[
+  {
+    "id": 6,
+    "title": "I'm the noly guy!",
+    "author": "Caban4ik",
+    "availability": "No",
+    "releaseDate": "2013-04-10",
+    "returnDate": "2013-04-20",
+    "takenBy": "Yegor"
+  },
+  {
+    "id": 7,
+    "title": "Hello Seattle",
+    "author": "Motgen",
+    "availability": "Yes",
+    "releaseDate": "2003-04-15",
+    "returnDate": null,
+    "takenBy": null
+  },
+  {
+    "id": 8,
+    "title": "I'm the noly guy!",
+    "author": "Caban4ik",
+    "availability": "No",
+    "releaseDate": "2013-04-10",
+    "returnDate": "2013-04-20",
+    "takenBy": "Yegor"
+  },
+  {
+    "id": 9,
+    "title": "Hello Seattle",
+    "author": "Motgen",
+    "availability": "Yes",
+    "releaseDate": "2003-04-15",
+    "returnDate": null,
+    "takenBy": null
+  },
+  {
+    "id": 13,
+    "title": "asdfg",
+    "author": "Kolya Ershov",
+    "availability": "Yes",
+    "releaseDate": "1212-12-12",
+    "returnDate": null,
+    "takenBy": null
+  },
+  {
+    "id": 15,
+    "title": "Understand",
+    "author": "Vavik Sosat",
+    "availability": "Yes",
+    "releaseDate": "2012-02-23",
+    "returnDate": null,
+    "takenBy": null
+  },
+  {
+    "id": 16,
+    "title": "1234",
+    "author": "Matvei",
+    "availability": "Yes",
+    "releaseDate": "2012-02-23",
+    "returnDate": null,
+    "takenBy": null
+  },
+  {
+    "id": 17,
+    "title": "1984",
+    "author": "Oleg",
+    "availability": "Yes",
+    "releaseDate": "1980-12-12",
+    "returnDate": null,
+    "takenBy": null
+  }
+]

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/stylesheets/style.css")
+        script(src="/public/javascripts/library.js")
+        title Library
+    body
+        header
+            select(class="data_list" id="select" onchange="sortBooks()")
+                option(value="Default") Default
+                option(value="Date of Return") Date of Return
+                option(value="Availability") Availability
+                option(value="Title") Title
+                option(value="Author") Author
+                option(value="Date of Release") Date of Release
+            button(class="action_button_user_info" onClick="openUserModal("+user.id+")") User Info
+            button(class="action_button" onClick="toAddBook()") Add Book
+            button(class="logout_button" onClick="logout()") Logout
+        table
+            thead
+                th Book Title
+                th Author
+                th Availability
+                th Date of Release
+                th Date of Return
+                th Action
+            tbody(id="table-body")
+                each book in books
+                    tr
+                        th=book.title
+                        th=book.author
+                        th=book.availability
+                        th=book.releaseDate
+                        th=book.returnDate
+                        th(id="action-cell")
+                            button(onClick="takeBook("+book.id+")" class="action_button" id="take-but") Take
+                            button(onClick="deleteBook("+book.id+")" class="action_button" id="del-but") Delete
+                            button(onClick="bookInfo("+book.id+")" class="action_button" id="info-but") Info
+        include includes/userModal.pug

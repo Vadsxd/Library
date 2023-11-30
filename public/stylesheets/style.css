@@ -1,0 +1,279 @@
+*{
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F4F4F;
+  font-weight: bold;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+body {
+  padding: 50px;
+  font: 16px "Roboto Light", Helvetica, Arial, sans-serif;
+  background: #F0F5FF;
+}
+
+.data_list {
+  opacity: 0.2;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-left: 155px;
+  width: 200px;
+  border: 3px solid #7B61FF;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .8rem;
+  display: table;
+  margin: 0 auto;
+  width: 1000px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+}
+
+thead {
+  padding: 16px;
+  gap: 4px;
+  isolation: isolate;
+  background: #FAFAFA;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+th {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr {
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+a {
+  color: #00B7FF;
+}
+
+section {
+  margin-bottom: 10px ;
+}
+
+.reg_auth_form {
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 188px 12px;
+  gap: 20px;
+  position: relative;
+  width: 288px;
+  height: 460px;
+  background: #F0F5FF;
+  border: 3px solid #7B61FF;
+  border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+input{
+  display: table;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 264px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+}
+
+.pict {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  top: -100px;
+}
+
+.auth_title {
+  display: table;
+  margin: 0 auto;
+  top: -30px;
+  position: relative;
+}
+
+.book_info_title {
+  display: table;
+  margin: 0 auto;
+  top: -30px;
+  position: relative;
+}
+
+button:hover {
+  background: red;
+  cursor: pointer;
+}
+
+
+.sign_in_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  right: -10px;
+  width: 114px;
+  height: 40px;
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.to_auth_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  top: 588px;
+  right: 570px;
+  width: 114px;
+  height: 24px;
+  background: #FFCF48;
+  border: 2px solid #FFCF48;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.to_register_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  top: 546px;
+  right: 570px;
+  width: 114px;
+  height: 24px;
+  background: #FFCF48;
+  border: 2px solid #FFCF48;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.book_info_form {
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 188px 12px;
+  gap: 20px;
+  position: relative;
+  width: 288px;
+  height: 100px;
+  background: #F0F5FF;
+  border: 3px solid #7B61FF;
+  border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.return_book_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  right: -10px;
+  width: 114px;
+  height: 40px;
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.to_library_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  top: 1045px;
+  right: 576px;
+  width: 114px;
+  height: 24px;
+  background: #FFCF48;
+  border: 2px solid #FFCF48;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.action_button {
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  margin-right: 3px;
+}
+
+.action_button_user_info {
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  margin-right: 3px;
+  margin-left: 550px;
+}
+
+.to_library_button_add {
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  top: 588px;
+  right: 576px;
+  width: 114px;
+  height: 24px;
+  background: #FFCF48;
+  border: 2px solid #FFCF48;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+
+.logout_button {
+  background: #FFCF48;
+  border: 2px solid #FFCF48;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  margin-right: 3px;
+}
+
+.close-userModal-button {
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  margin-right: 3px;
+  width: 100px;
+  height: 30px;
+}
+
+.edit_book_button {
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  right: 105px;
+  width: 114px;
+  height: 40px;
+  background: #1890FF;
+  border: 2px solid #1890FF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+}
+

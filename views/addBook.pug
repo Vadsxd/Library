@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/stylesheets/style.css")
+        title Add Book
+    body
+        form(class="book_info_form" action="/library/add" method="POST")
+            img.className#IdName(src="/public/images/addBook.png" alt="Question Picture" class='pict')
+            p(class='book_info_title') Add Book
+            section
+                input#author(name='author' type='text' placeholder='author' required)
+            section
+                input#title(name='title' type='text' placeholder='title' required)
+            section
+                input#date(name='releaseDate' type='date' placeholder='release date' required max=new Date().toISOString().split("T")[0])
+            button(type="submit" class='return_book_button') Add Book
+        button(onclick="location = '/library'" class='to_library_button_add') Back

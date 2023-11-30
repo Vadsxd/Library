@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/stylesheets/style.css")
+        script(src="/public/javascripts/library.js")
+        title Book Info
+    body
+        form(class="book_info_form" action="/library/editBook" method="POST")
+            img.className#IdName(src="/public/images/question.png" alt="Question Picture" class='pict')
+            p(class='book_info_title') Book Info
+            section
+                p Book ID
+                input#bookId(name='bookId' type='number' value=book[0].id required readonly)
+            section
+                p Author
+                input#author(name='author' type='text' value=book[0].author required)
+            section
+                p Title
+                input#title(name='title' type='text' value=book[0].title required)
+            section
+                p Release Date
+                input#release_date(name='releaseDate' type='date' value=book[0].releaseDate required max=new Date().toISOString().split("T")[0])
+            section
+                p Availability
+                input#availability(name='availability' type='text' value=book[0].availability required)
+            section
+                p Return Date
+                input#return_date(name='returnDate' type='date' value=book[0].returnDate min=new Date().toISOString().split("T")[0])
+            section
+                p Book User
+                input#book_user(name='bookUser' type='text' value=bookUserName)
+            button(class='return_book_button' onClick="returnBook("+book[0].id+")") Return Book
+            button(type="submit" class='edit_book_button') Edit Book
+        button(onclick="location = '/library'" class='to_library_button') Back
